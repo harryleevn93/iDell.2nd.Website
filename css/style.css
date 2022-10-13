@@ -1,0 +1,1016 @@
+/* ========== Overall Setting ========== */
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
+    width: 360px;
+    margin: auto;
+    border: 15px solid #404040;
+    border-radius: 20px;
+    width: 395px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+svg{
+    width: 30px;
+    height: 30px;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.padding-all{
+    padding: 5px 15px;
+}
+
+a{
+    text-decoration: transparent;
+    color: #333;
+}
+
+.reset-list{
+    list-style: none;
+    padding: 0px; margin: 0px;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.currency::after{
+    content: "$";
+}
+
+/* ========== Header Section Setting ========== */
+header{
+    display: inline;
+    background-color: #fafafa;
+    height: 90px;
+    align-items: center;
+}
+
+header .navigation-bar{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    justify-content: center;
+    height: 45px;
+    background-color: #fafafa;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+header .navigation-bar::after{
+    content: "";
+    width: calc(100% - 30px);
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header .navigation-bar .menu-button{
+    margin-right: auto;
+}
+
+header .navigation-bar .right-content{
+    margin-left: auto;
+    position: relative;
+}
+
+header .navigation-bar .right-content .user-button{
+    margin-left: 15px;
+}
+
+header .navigation-bar .right-content .numbers-of-items{
+    position: absolute;
+    background-color: tomato;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-size: small;
+    font-weight: 600;
+    color: white;
+    border-radius: 9px;
+    left: 15px;
+    top: -2px;
+}
+
+header .navigation-bar svg{
+    fill: #555;
+}
+
+header .header-logo img{
+    height: 35px;
+}
+
+
+header .search-bar{
+    padding: 0 15px 0 15px;
+    height: 45px;
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    background-color: #fafafa;
+}
+
+header .search-bar input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 35px;
+    border: #ddd solid 1px;
+}
+
+header .search-bar .search-icon{
+    position: absolute;
+    bottom: calc(50% - 8px);
+    left: 25px;
+}
+
+header .search-bar svg{
+    width: 20px;
+    height: 20px;
+    fill: #aaa;
+}
+
+/* ========== Banner Section Setting ========== */
+.page-carousel {
+    padding-bottom: 5px;
+    min-height: 405px;
+}
+
+.page-carousel .carousel-slide{
+    width: 100%;
+    height: 405px;
+    position: relative;
+}
+
+.page-carousel .carousel-slide .swiper-wrapper .swiper-slide{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-carousel .carousel-slide .swiper-wrapper .swiper-slide .image-product{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    scale: 0.7;
+    transform: translate(-72%, 0);
+}
+
+.page-carousel .carousel-slide .swiper-wrapper .swiper-slide .image-subtitle{
+    position: absolute;
+    top: 9px;
+    left: 120px;
+    font-size: 0.6rem;
+    color: white;
+}
+
+.page-carousel .carousel-slide .swiper-wrapper .swiper-slide .image-title{
+    top: 280px;
+    left: 50%;
+    width: calc(330px);
+    text-align: center;
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: 'Audiowide', cursive;
+    font-size: x-large;
+}
+
+.page-carousel .carousel-slide .swiper-wrapper .swiper-slide .image-content{
+    top: 300px;
+    left: 50%;
+    width: calc(330px);
+    text-align: center;
+    color: white;
+    position: absolute;
+    transform: translate(-50%, 0);
+    font-size: 0.7rem;
+    border-radius: 10%;
+}
+
+.page-carousel .carousel-slide .swiper-wrapper .swiper-slide .image-readmore-button{
+    top: 355px;
+    left: 50%;
+    width: 120px;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    transform: translate(-50%, 0);
+}
+
+.page-carousel .carousel-slide .swiper-wrapper .bkg1{
+    background-image: url("../src/decoration/bkg1.webp");
+    background-position: center;
+}
+
+.page-carousel .carousel-slide .swiper-wrapper .bkg2{
+    background-image: url("../src/decoration/bkg2.webp");
+    background-position: center;
+}
+
+.page-carousel .carousel-slide .swiper-wrapper .bkg3{
+    background-image: url("../src/decoration/bkg3.webp");
+    background-position: center;
+}
+
+.page-carousel .carousel-slide .swiper-wrapper .bkg4{
+    background-image: url("../src/decoration/bkg4.webp");
+    background-position: center;
+}
+
+.page-carousel .carousel-slide .swiper-wrapper .bkg5{
+    background-image: url("../src/decoration/bkg5.webp");
+    background-position: center;
+}
+
+.page-carousel .carousel-slide .swiper-pagination{
+    top: 5px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.page-carousel .carousel-slide .swiper-pagination .swiper-pagination-bullet{
+    height: 12px;
+    width: 12px;
+    background-color: #999;
+    border: 1px solid #fafafa;
+}
+
+.page-carousel .carousel-slide .swiper-pagination .swiper-pagination-bullet-active{
+    background-color: royalblue;
+}
+
+/* ========== Popular Product Section Setting ========== */
+.popular-product {
+    padding-bottom: 5px;
+    display: block;
+}
+
+.popular-product .title{
+    display: flex;
+    vertical-align: center;
+    height: 40px;
+    margin: auto;
+    padding: 5px;
+}
+
+.popular-product .title svg{
+    fill: royalblue;
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.popular-product .title h1{
+    color: royalblue;
+    font-size: large;
+}
+
+.popular-product .display-product{
+    display:inline-flex;
+    gap: 2.5px;
+}
+
+.popular-product .display-product .product-box{
+    height: 185px;
+    width: 160px;
+    margin-right: 10px;
+    padding: 0 5px 0 5px;
+    border: #ddd solid 1px;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+}
+
+.popular-product .display-product .product-box .product-sales{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.popular-product .display-product .product-box .product-image{
+    height: 92px;
+    width: 150px;
+    /* background-color: aqua; */
+
+}
+
+.popular-product .display-product .product-box .product-name{
+    font-size: small;
+    font-weight: 600;
+}
+
+.popular-product .display-product .product-box .product-price{
+    font-size: small;
+    font-weight: 600;
+    color: gold;
+}
+
+.popular-product .display-product .product-box .product-price del{
+    color:gray;
+    font-size: smaller;
+}
+
+.popular-product .display-product .product-box .product-price .price-discount{
+    color:orangered;
+    font-size: smaller;
+}
+
+.popular-product .display-product .button-toggle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-product .display-product .button-toggle .add-to-cart-button{
+    display: flex;
+    justify-items: center;
+    vertical-align: center;
+    border-radius: 5px;
+    color: #fff; 
+    padding: 5px 2px 5px 7px;
+    width: 70px;
+    background-color: mediumseagreen;
+    font-size: x-small;
+}
+
+.popular-product .display-product .button-toggle .add-to-cart-button svg{
+    height: 16px;
+    width: 16px;
+    fill: #fff;
+    margin: auto;
+}
+
+.popular-product .display-product .button-toggle .view-details-button{
+    display: flex;
+    justify-items: center;
+    vertical-align: center;
+    border-radius: 5px;
+    color: #fff; 
+    padding: 5px 2px 5px 7px;
+    width: 70px;
+    background-color: royalblue;
+    font-size: x-small;
+}
+
+.popular-product .display-product .button-toggle .view-details-button svg{
+    height: 16px;
+    width: 16px;
+    margin: auto;
+    fill: #fff;
+}
+
+/* ========== Laptop Section Setting ========== */
+.laptop {
+    padding-bottom: 5px;
+    display: block;
+}
+
+.laptop .title{
+    display: flex;
+    vertical-align: center;
+    height: 40px;
+    margin: auto;
+    padding: 5px;
+}
+
+.laptop .title svg{
+    fill: royalblue;
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.laptop .title h1{
+    color: royalblue;
+    font-size: large;
+}
+
+.laptop .display-product{
+    display:inline-flex;
+    gap: 2.5px;
+}
+
+.laptop .display-product .product-box{
+    height: 185px;
+    width: 160px;
+    margin-right: 10px;
+    padding: 0 5px 0 5px;
+    border: #ddd solid 1px;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+}
+
+.laptop .display-product .product-box .product-sales{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.laptop .display-product .product-box .product-image{
+    height: 92px;
+    width: 150px;
+    /* background-color: aqua; */
+
+}
+
+.laptop .display-product .product-box .product-name{
+    font-size: small;
+    font-weight: 600;
+}
+
+.laptop .display-product .product-box .product-price{
+    font-size: small;
+    font-weight: 600;
+    color: gold;
+}
+
+.laptop .display-product .product-box .product-price del{
+    color:gray;
+    font-size: smaller;
+}
+
+.laptop .display-product .product-box .product-price .price-discount{
+    color:orangered;
+    font-size: smaller;
+}
+
+.laptop .display-product .button-toggle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.laptop .display-product .button-toggle .add-to-cart-button{
+    display: flex;
+    justify-items: center;
+    vertical-align: center;
+    border-radius: 5px;
+    color: #fff; 
+    padding: 5px 2px 5px 7px;
+    width: 70px;
+    background-color: mediumseagreen;
+    font-size: x-small;
+}
+
+.laptop .display-product .button-toggle .add-to-cart-button svg{
+    height: 16px;
+    width: 16px;
+    fill: #fff;
+    margin: auto;
+}
+
+.laptop .display-product .button-toggle .view-details-button{
+    display: flex;
+    justify-items: center;
+    vertical-align: center;
+    border-radius: 5px;
+    color: #fff; 
+    padding: 5px 2px 5px 7px;
+    width: 70px;
+    background-color: royalblue;
+    font-size: x-small;
+}
+
+.laptop .display-product .button-toggle .view-details-button svg{
+    height: 16px;
+    width: 16px;
+    margin: auto;
+    fill: #fff;
+}
+
+/* ========== Headphones Section Setting ========== */
+.headphones {
+    padding-bottom: 5px;
+    display: block;
+}
+
+.headphones .title{
+    display: flex;
+    vertical-align: center;
+    height: 40px;
+    margin: auto;
+    padding: 5px;
+}
+
+.headphones .title svg{
+    fill: royalblue;
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.headphones .title h1{
+    color: royalblue;
+    font-size: large;
+}
+
+.headphones .display-product{
+    display:inline-flex;
+    gap: 2.5px;
+}
+
+.headphones .display-product .product-box{
+    height: 185px;
+    width: 160px;
+    margin-right: 10px;
+    padding: 0 5px 0 5px;
+    border: #ddd solid 1px;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+}
+
+.headphones .display-product .product-box .product-sales{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.headphones .display-product .product-box .product-image{
+    height: 92px;
+    width: 150px;
+    /* background-color: aqua; */
+
+}
+
+.headphones .display-product .product-box .product-name{
+    font-size: small;
+    font-weight: 600;
+}
+
+.headphones .display-product .product-box .product-price{
+    font-size: small;
+    font-weight: 600;
+    color: gold;
+}
+
+.headphones .display-product .product-box .product-price del{
+    color:gray;
+    font-size: smaller;
+}
+
+.headphones .display-product .product-box .product-price .price-discount{
+    color:orangered;
+    font-size: smaller;
+}
+
+.headphones .display-product .button-toggle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headphones .display-product .button-toggle .add-to-cart-button{
+    display: flex;
+    justify-items: center;
+    vertical-align: center;
+    border-radius: 5px;
+    color: #fff; 
+    padding: 5px 2px 5px 7px;
+    width: 70px;
+    background-color: mediumseagreen;
+    font-size: x-small;
+}
+
+.headphones .display-product .button-toggle .add-to-cart-button svg{
+    height: 16px;
+    width: 16px;
+    fill: #fff;
+    margin: auto;
+}
+
+.headphones .display-product .button-toggle .view-details-button{
+    display: flex;
+    justify-items: center;
+    vertical-align: center;
+    border-radius: 5px;
+    color: #fff; 
+    padding: 5px 2px 5px 7px;
+    width: 70px;
+    background-color: royalblue;
+    font-size: x-small;
+}
+
+.headphones .display-product .button-toggle .view-details-button svg{
+    height: 16px;
+    width: 16px;
+    margin: auto;
+    fill: #fff;
+}
+
+
+/* ========== Mouses Section Setting ========== */
+.mouses {
+    padding-bottom: 5px;
+    display: block;
+}
+
+.mouses .title{
+    display: flex;
+    vertical-align: center;
+    height: 40px;
+    margin: auto;
+    padding: 5px;
+}
+
+.mouses .title svg{
+    fill: royalblue;
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.mouses .title h1{
+    color: royalblue;
+    font-size: large;
+}
+
+.mouses .display-product{
+    display:inline-flex;
+    gap: 2.5px;
+}
+
+.mouses .display-product .product-box{
+    height: 185px;
+    width: 160px;
+    margin-right: 10px;
+    padding: 0 5px 0 5px;
+    border: #ddd solid 1px;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+}
+
+.mouses .display-product .product-box .product-sales{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.mouses .display-product .product-box .product-image{
+    height: 92px;
+    width: 150px;
+    /* background-color: aqua; */
+}
+
+.mouses .display-product .product-box .product-name{
+    font-size: small;
+    font-weight: 600;
+}
+
+.mouses .display-product .product-box .product-price{
+    font-size: small;
+    font-weight: 600;
+    color: gold;
+}
+
+.mouses .display-product .product-box .product-price del{
+    color:gray;
+    font-size: smaller;
+}
+
+.mouses .display-product .product-box .product-price .price-discount{
+    color:orangered;
+    font-size: smaller;
+}
+
+.mouses .display-product .button-toggle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mouses .display-product .button-toggle .add-to-cart-button{
+    display: flex;
+    justify-items: center;
+    vertical-align: center;
+    border-radius: 5px;
+    color: #fff; 
+    padding: 5px 2px 5px 7px;
+    width: 70px;
+    background-color: mediumseagreen;
+    font-size: x-small;
+}
+
+.mouses .display-product .button-toggle .add-to-cart-button svg{
+    height: 16px;
+    width: 16px;
+    fill: #fff;
+    margin: auto;
+}
+
+.mouses .display-product .button-toggle .view-details-button{
+    display: flex;
+    justify-items: center;
+    vertical-align: center;
+    border-radius: 5px;
+    color: #fff; 
+    padding: 5px 2px 5px 7px;
+    width: 70px;
+    background-color: royalblue;
+    font-size: x-small;
+}
+
+.mouses .display-product .button-toggle .view-details-button svg{
+    height: 16px;
+    width: 16px;
+    margin: auto;
+    fill: #fff;
+}
+
+/* ========== Keyboards Section Setting ========== */
+.keyboards {
+    padding-bottom: 5px;
+    display: block;
+}
+
+.keyboards .title{
+    display: flex;
+    vertical-align: center;
+    height: 40px;
+    margin: auto;
+    padding: 5px;
+}
+
+.keyboards .title svg{
+    fill: royalblue;
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.keyboards .title h1{
+    color: royalblue;
+    font-size: large;
+}
+
+.keyboards .display-product{
+    display:inline-flex;
+    gap: 2.5px;
+}
+
+.keyboards .display-product .product-box{
+    height: 185px;
+    width: 160px;
+    margin-right: 10px;
+    padding: 0 5px 0 5px;
+    border: #ddd solid 1px;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+}
+
+.keyboards .display-product .product-box .product-sales{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.keyboards .display-product .product-box .product-image{
+    height: 92px;
+    width: 150px;
+    /* background-color: aqua; */
+
+}
+
+.keyboards .display-product .product-box .product-name{
+    font-size: small;
+    font-weight: 600;
+}
+
+.keyboards .display-product .product-box .product-price{
+    font-size: small;
+    font-weight: 600;
+    color: gold;
+}
+
+.keyboards .display-product .product-box .product-price del{
+    color:gray;
+    font-size: smaller;
+}
+
+.keyboards .display-product .product-box .product-price .price-discount{
+    color:orangered;
+    font-size: smaller;
+}
+
+.keyboards .display-product .button-toggle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.keyboards .display-product .button-toggle .add-to-cart-button{
+    display: flex;
+    justify-items: center;
+    vertical-align: center;
+    border-radius: 5px;
+    color: #fff; 
+    padding: 5px 2px 5px 7px;
+    width: 70px;
+    background-color: mediumseagreen;
+    font-size: x-small;
+}
+
+.keyboards .display-product .button-toggle .add-to-cart-button svg{
+    height: 16px;
+    width: 16px;
+    fill: #fff;
+    margin: auto;
+}
+
+.keyboards .display-product .button-toggle .view-details-button{
+    display: flex;
+    justify-items: center;
+    vertical-align: center;
+    border-radius: 5px;
+    color: #fff; 
+    padding: 5px 2px 5px 7px;
+    width: 70px;
+    background-color: royalblue;
+    font-size: x-small;
+}
+
+.keyboards .display-product .button-toggle .view-details-button svg{
+    height: 16px;
+    width: 16px;
+    margin: auto;
+    fill: #fff;
+}
+
+/* ========== Footer Setting ========== */
+footer{
+    position: relative;
+}
+
+footer .contact-us{
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+
+footer .contact-us .text{
+    padding-right: 10px;
+    color: white;
+    margin: 10px 0px;
+    font-size: small;
+}
+
+footer svg{
+    width: 35px;
+    height: 35px;
+    fill: white;
+    margin: 5px 2px 0 0;
+}
+
+footer .shop-information{
+    position: relative;
+}
+
+footer .shop-information .shop-title .header-logo img{
+    height: 50px;
+}
+
+footer .shop-information::after{
+    content: "";
+    width: calc(100% - 30px);
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+footer .shop-information .address{
+    font-size: smaller;
+}
+
+footer .shop-information .company-name{
+    font-size: medium;
+    font-weight: 700;
+}
+
+footer .shop-information .company-description{
+    font-size: smaller;
+}
+
+footer .shop-information .google-map{
+    border-radius: 10px;
+}
+
+footer .categories{
+    position: relative;
+}
+
+footer .categories #suites{
+    font-size: small;
+    font-weight: 600;
+}
+
+footer .categories::after{
+    content: "";
+    width: calc(100% - 30px);
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+footer .categories p{
+    font-size: medium;
+    font-weight: 700;
+}
+
+footer .categories ul li{
+    font-size: smaller;
+}
+
+.categories-menu{
+    display: inline-block;
+    padding-right: calc(15px + 1vw);
+}
+
+footer .statement{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+footer .statement a{
+    padding-right: 5vw;
+    font-size: smaller;
+}
+
+footer .copyright{
+    font-size: smaller;
+}
+
+footer .chat-with-us{
+    position: absolute;
+    bottom: 45px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+footer .chat-with-us svg{
+    width: 25px;
+    height: 25px;
+    fill: white;
+    margin: auto;
+    margin-left: 5px;
+}
+
+footer .back-to-top{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    background-color: steelblue;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+footer .back-to-top svg{
+    width: 25px;
+    height: 25px;
+    fill: white;
+    margin: auto;
+    margin-left: 5px;
+}
