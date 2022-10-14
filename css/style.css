@@ -58,6 +58,7 @@ header{
     background-color: #fafafa;
     height: 90px;
     align-items: center;
+    position: relative;
 }
 
 header .navigation-bar{
@@ -115,6 +116,10 @@ header .navigation-bar svg{
 
 header .header-logo img{
     height: 35px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%,0);
 }
 
 
